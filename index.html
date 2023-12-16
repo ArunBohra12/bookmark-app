@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet" />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav class="mx-auto mt-10 flex items-center justify-between px-8 md:mt-12 xl:max-w-[1104px] xl:px-0">
+        <a href="/" aria-label="Homepage">
+          <img src="/images/logo-bookmark.svg" height="25" alt="Bookmark homepage" />
+        </a>
+
+        <!-- Desktop navigation -->
+        <ul class="hidden items-center gap-12 md:flex">
+          <li>
+            <a href="/features" class="link link-light">FEATURES</a>
+          </li>
+          <li>
+            <a href="/pricing" class="link link-light">PRICING</a>
+          </li>
+          <li>
+            <a href="/contact" class="link link-light">CONTACT</a>
+          </li>
+          <li>
+            <a href="/login" class="btn btn-red px-8 py-3 font-medium">LOGIN</a>
+          </li>
+        </ul>
+
+        <!-- Mobile navigation toggle button -->
+        <button type="button" class="md:hidden" aria-label="Open menu" id="mobile-nav-menu-open">
+          <img src="/images/icon-hamburger.svg" alt="Open Navigation" width="18" height="15" />
+        </button>
+
+        <!-- Mobile navigation -->
+        <nav
+          id="mobile-nav-menu"
+          class="fixed inset-0 flex h-screen w-full flex-col bg-blue p-8 pb-12 opacity-95 md:hidden"
+          data-is-open="false">
+          <div class="flex items-center justify-between">
+            <a href="/" aria-label="Homepage">
+              <img src="/images/logo-bookmark-dark.svg" height="25" alt="Bookmark homepage" />
+            </a>
+
+            <button type="button" aria-label="Close menu" id="mobile-nav-menu-close">
+              <img src="/images/icon-close.svg" width="16" height="15" alt="Close navigation" />
+            </button>
+          </div>
+
+          <div class="mb-auto mt-10 text-xl tracking-[2.308px] text-white">
+            <ul class="mb-6 text-center [&>li]:border-b [&>li]:border-white [&>li]:border-opacity-[0.15] [&>li]:py-6">
+              <li class="border-t border-white border-opacity-[0.15]">
+                <a href="/features" class="link-dark">FEATURES</a>
+              </li>
+              <li>
+                <a href="/pricing" class="link-dark">PRICING</a>
+              </li>
+              <li>
+                <a href="/contact" class="link-dark">CONTACT</a>
+              </li>
+            </ul>
+
+            <a
+              href="/login"
+              class="mx-auto block w-full max-w-[308px] rounded-[5px] border-2 border-white py-2 text-center font-medium transition-colors duration-300 hover:border-red hover:text-red">
+              LOGIN
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center gap-10">
+            <a href="https://www.facebook.com">
+              <img src="/images/icon-facebook.svg" height="24" width="24" alt="Facebook link" />
+            </a>
+            <a href="https://www.twitter.com">
+              <img src="/public/images/icon-twitter.svg" height="24" width="24" alt="Twitter link" />
+            </a>
+          </div>
+        </nav>
+      </nav>
+    </header>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+
+    <script type="module" src="/src/ts/main.ts"></script>
+  </body>
+</html>

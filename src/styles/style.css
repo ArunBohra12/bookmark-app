@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply font-normal not-italic;
+  }
+
+  body {
+    @apply text;
+  }
+
+  a {
+    display: inline-block;
+  }
+}
+
+@layer components {
+  .text {
+    @apply text-[13px] leading-[17px] tracking-[1.5px];
+  }
+
+  .link-light {
+    @apply text-blue transition-colors duration-300 hover:text-red;
+  }
+
+  .link-dark {
+    @apply text-white transition-colors duration-300 hover:text-red;
+  }
+
+  .btn {
+    @apply rounded-[5px] shadow-[0_8px_8px_-4px_rgba(73,_93,_207,_0.20)];
+  }
+
+  .btn-red {
+    @apply border-2 border-red bg-red text-white transition-colors duration-300 hover:bg-white hover:text-red;
+  }
+}
